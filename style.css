@@ -47,6 +47,7 @@ a{
 }
 body{
     font-family: 'Poppins', sans-serif;
+    background-color: white;
 }
 
 
@@ -55,7 +56,10 @@ body{
 
 
 
-
+.dark{
+    background-color: rgb(58, 55, 55);
+    color: white;
+} 
 
 header {
     height: 65px;
@@ -169,7 +173,22 @@ a{
     text-align: center;
 }
 
+.buttonNav {
+    margin-top: 10px;
+    background-color: white;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 100px;
+    text-align: center;
+}
+
 .button:hover{
+    background-color: rgba(113, 40, 0, 1);
+    transition: all 0.5s;
+    color: white;
+}
+
+.buttonNav:hover{
     background-color: rgba(113, 40, 0, 1);
     transition: all 0.5s;
     color: white;
@@ -193,7 +212,20 @@ a{
 .mid-content{
     height: 315px;
     background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 10px;
 }
+.main-content{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.main-content .button{
+    margin-top: 20px;
+}
+
+
+
+
 
 .card{
     text-align: center;
@@ -213,12 +245,13 @@ a{
     margin-top: 30px;
 }
 
-.mid-content .card{
-    padding-top: 10px;
+
+
+
+/* bawah */
+.bottom-content{
+    margin-bottom: 50px;
 }
-
-
-
 .bottom-content .card{
     display: flex;
     width: 100%;
@@ -227,7 +260,7 @@ a{
     justify-content: center;
 }
 
-.bottom-content .judul{
+.judul{
     text-align: center;
     margin-top: 20px;
     color: rgba(113, 50, 0);
@@ -240,7 +273,10 @@ a{
 
 .mid-content .card-content:hover{
     border-radius: 7px;
-    background-color: rgba(0, 0, 150, 0.1);
+    /* background-color: rgba(0, 0, 150, 0.1); */
+    background-color: rgba(113, 50, 0);
+    color: white;
+    transition: 1s;
 }
 
 .bottom-content .card-content{
@@ -252,7 +288,6 @@ a{
 }
 
 footer{
-    margin-top: 50px;
     background-color: rgba(113, 40, 0, 1);
     padding-left: 50px;
     height: 50px;
@@ -268,8 +303,3 @@ footer p{
     margin-top: 15px;
     float: right;
 }
-
-
-
-
-
